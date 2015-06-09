@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Priceline</title>
+	<script type="text/javascript" src ="../js/route.js"></script>
+	<script type="text/javascript" src ="../js/ngStorage.min.js"></script>
+	<script type="text/javascript" src ="../js/angular.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.13/angular-animate.min.js"></script>
+	<script type="text/javascript" src ="../js/priceline.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+	
+	<link rel="stylesheet" type="text/css" href="../css/priceline.css"/>
+	<style>
+	nav ul{list-style:none;}
+	nav ul li a {text-decoration:none; color:#FFF; padding:20px 25px; float:left;}
+	</style>
+</head>
+<body>
+<div class="container">
+<section class="maindiv">
+<header>
+	<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>      
+    </div>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    <a id="logo" href="#">
+	<img src="../image/priceline-logo-2012.png" class="logo-responsive "alt="Priceline.com"></a>
+      <ul class="nav navbar-nav">
+        <li><a  href="#">Hotel</a></li>
+        <li><a href="#">Cars</a></li>
+        <li><a href="#">Flights</a></li>
+        <li><a href="#">Vacation Package</a></li>
+        <li><a href="#">Cruises</a></li>
+      </ul>      
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Help<span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="#">Self Service</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Frequent asked questions</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Find your request number</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Profile Password help</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">My Trips<span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="#">My Flight</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Check your Flight status</a></li>
+            <li class="divider"></li>
+            <li><a href="#">View,print or Email your itinerary </a></li>
+            <li class="divider"></li>
+            <li><a href="#">Check Your Request Status</a></li>
+          </ul>
+        </li>
+      </ul>     
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+	
+	<div class="search">
+	<form id="priceform">
+	<h1>Search and Save on Hotels</h1>
+	
+	<label>Where are you going?
+	<input style="width:330px;" type="text" class="form-control" placeholder="City, Airport or Point of Interest"/></label>
+	
+	<label>Check-in
+	<input style="width:163px;"type="text" class="form-control" datepicker-popup="" placeholder="Choose Date"/>
+	<!--  <span class="input-group-btn">
+	<button class="btn btn-default" ng-click="open($event)" type="button"></button>
+	</span>-->
+	</label>
+
+	<label>Check-out
+	<input style="width:163px;"type="text" class="form-control" datepicker-popup="" placeholder="Choose Date"/>	
+	</label>
+	
+	<label>Rooms</br>
+	<!-- <input type="text" class="form-control" placeholder="No. of Rooms"/> -->
+	<select id="rooms">
+	<option value="1">No. of Rooms</option>
+	<option value="1">1 Room</option>
+	<option value="2">2 Rooms</option>
+	<option value="3">3 Rooms</option>
+	<option value="4">4 Rooms</option>
+	<option value="5">5 Rooms</option>
+	</select>
+	</label>
+	
+	<button type="button" class="btn btn-success btn-lg">Search Hotels</button>
+	</form>
+	
+	
+	</div>
+	
+	<div class="pics">	
+	</div>
+	
+</header>
+</section>
+</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
